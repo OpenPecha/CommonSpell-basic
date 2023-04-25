@@ -50,8 +50,6 @@ jobs:
             return vulga_opf_path
 
         witness_dir = Path('./witnesses')
-        Path('./res/bo/').mkdir(parents=True, exist_ok=True)
-        os.system('curl https://raw.githubusercontent.com/OpenPecha/vulgatizer/main/res/bo/syllist.txt > ./res/bo/syllist.txt')
         run_vulgatizer(witness_dir)
       shell: python
 
