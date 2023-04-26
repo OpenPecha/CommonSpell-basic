@@ -24,33 +24,33 @@ jobs:
       run: |
         pip install -U pip
         pip install python-dateutil
-        pip install git+https://github.com/OpenPecha/vulgatizer.git
+        pip install git+https://github.com/OpenPecha/CommonSpell.git
     - name: Create vulgate text
       run: |
         import os
         from openpecha.core.ids import get_open_pecha_id
         from openpecha.core.pecha import OpenPechaFS
         from pathlib import Path
-        from vulgatizer.vulgatizer_plain_text import VulgatizerPlainText
+        from CommonSpell.plain_text import PlainTextCommonSpeller
 
-        def run_vulgatizer(witness_dir):
+        def run_common_speller(witness_dir):
             pecha_id = get_open_pecha_id()
-            vulga_opf_path = Path(f'./vulga/{pecha_id}.opf')
+            common_spell_opf_path = Path(f'./common_spell/{pecha_id}.opf')
             try:
                 witness_paths = list(witness_dir.iterdir())
             except:
                 print("witness directory doesn't exist")
                 return None
             witness_paths.sort()
-            op_output = OpenPechaFS(vulga_opf_path)
-            vulgatizer = VulgatizerPlainText(op_output)
+            op_output = OpenPechaFS(common_spell_opf_path)
+            common_speller = PlainTextCommonSpeller(op_output)
             for witness_path in witness_paths:
-                vulgatizer.add_witness(witness_path)
-            vulgatizer.create_vulgate()
+                common_speller.add_witness(witness_path)
+            common_speller.create_vulgate()
             return vulga_opf_path
 
         witness_dir = Path('./witnesses')
-        run_vulgatizer(witness_dir)
+        run_common_speller(witness_dir)
       shell: python
 
     - name: Git Auto Commit
