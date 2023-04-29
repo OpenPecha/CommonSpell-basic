@@ -39,11 +39,11 @@ jobs:
                 base_text.append(text)
             return '\n'.join(base_text)
 
-        def run_common_speller(witness_dir):
+        def run_common_speller(version_dir):
             pecha_id = get_open_pecha_id()
             common_spell_opf_path = Path(f'./common_spell_opf/{pecha_id}.opf')
             try:
-                witness_paths = list(witness_dir.iterdir())
+                witness_paths = list(version_dir.iterdir())
             except:
                 print("witness directory doesn't exist")
                 return None
@@ -59,8 +59,8 @@ jobs:
             shutil.rmtree(Path('./common_spell_opf'))
             return common_spell_text
 
-        witness_dir = Path('./witnesses')
-        common_spell_text = run_common_speller(witness_dir)
+        version_dir = Path('./versions')
+        common_spell_text = run_common_speller(version_dir)
         common_spell_dir = Path('./common_spell')
         common_spell_dir.mkdir(exist_ok=True)
         (common_spell_dir / "common_spell.txt").write_text(common_spell_text)
