@@ -3,7 +3,7 @@
 With this github repo template you will be able to generate common spelling text of multiple versions.
 Steps to get common spell text
 
-- Click on `Use this Template`
+- Click on <button style="background-color:green;color:white;padding:10px;border-radius:5px;">Use this template</button>
 - Enter your repo name and proceed to create a new repo
 - Once you are in new repo, upload all the versions of text in witnesses folder in newly created repo
 - Push the files with commit message `Create common spell`. Without the mentioned commit message, the action won't be triggered.
