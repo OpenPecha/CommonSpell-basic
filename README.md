@@ -3,7 +3,8 @@
 With this github repo template you will be able to generate common spelling text of multiple versions.
 Steps to get common spell text
 
-- Click on [**Use this template ▼**](https://github.com/OpenPecha/CommonSpell-basic/generate)
+- Click on [<img src="https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png" width="25"/>](https://github.com/OpenPecha/CommonSpell-basic/generate)
+
 - Enter your repo name and proceed to create a new repo
 - Once you are in new repo, upload all the versions of text in witnesses folder in newly created repo
 - Push the files with commit message `Create common spell`. Without the mentioned commit message, the action won't be triggered.
