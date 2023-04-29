@@ -16,15 +16,15 @@ To check the package responsible to generate this text, refer [here](https://git
 
 Written by [@elie](https://github.com/eroux)
 
-Github Repo དེ་རྒྱད་དཔེ་རྒྱུན་མང་པོ་བེད་སྤྱོད་བྱས་ནས་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོས་ཐུབས།
-རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོས་རྒྱུར་གཤམ་གྱི་ step རྣམས་ཤར་སྐྱོད་དགྱིས།
+Github Repo བརྒྱུད་ནས་དཔེ་རྒྱུན་མང་པོ་བེད་སྤྱོད་ཀྱིས་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོ་ཐུབ།
+རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོ་བར་གཤམ་གྱི་གོ་རིམ་རྣམས་བརྒྱུད་དགོས།
 
-༡ Repo དེ་ Github ཐོག་ཁ་ཆེ་བ་དང་ Button [<img src="https://user-images.githubusercontent.com/17675331/235298897-a909d009-d833-45e1-b893-0ac5452c6948.png" height="25"/>](https://github.com/OpenPecha/CommonSpell-basic/generate) གང་ནོན།
+༡ Repo དེ་ Github ཐོག་ཁ་ཕྱེ་སྟེ་ Button [<img src="https://user-images.githubusercontent.com/17675331/235298897-a909d009-d833-45e1-b893-0ac5452c6948.png" height="25"/>](https://github.com/OpenPecha/CommonSpell-basic/generate) ཞེས་པའི་སྟེང་ནོན།
 
-༢ དེ་ནས་་Repo གསར་པ་བཟོས་ཆད་གེངས་ཤོག་སྐོང་།
+༢ དེ་ནས་ Repo གསར་པ་བཟོ་ཆེད་འགེངས་ཤོག་སྐོངས།
 
-༣ Repo གསར་པ་ནང་ `versions` ཟེར་མཁྱན་ folder ནང་དཔེ་རྒྱུན་ཡིག་རྐྱང་ཚང་མ་འཇུག།
+༣ Repo གསར་པའི་ནང་གི་ `versions` ཞེས་པའི་ཡིག་སྣོད་(folder)དུ་དཔེ་རྒྱུན་ཡིག་རྐྱང་ཚང་མ་ནང་འཇུག་བྱོས།
 
-༤ Github ནང་ commit message `Create common spell` བྲིས་ནས་ push བྱས། གལ་ཏེ་ commit message དེ་དག་མ་བྲིས་ན་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོས་ཀྱི་མ་རེད།
+༤ Github ནང་དུ་ commit message `Create common spell` བྲིས་ནས་ push བྱ་དགོས། གལ་ཏེ་ commit message དེ་དག་མ་བྲིས་ན་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་བཟོ་མི་ཐུབ།
 
-༥ སྐར་མ་ཁ་ཤས་རྗེས་ལ་ `common_spell` ཟེར་མཁྱན་ folder ནང་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་ཐོབས་ཀྱི་རེད།
+༥ སྐར་མ་ཁ་ཤས་རྗེས་སུ་ `common_spell` ཞེས་པའི་ཡིག་སྣོད་(folder) དུ་རྒྱུན་སྤྱོད་དག་ཆའི་ཡིག་རྐྱང་འཐོབ་ངེས།
