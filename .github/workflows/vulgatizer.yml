@@ -24,6 +24,8 @@ jobs:
       run: |
         pip install -U pip
         pip install python-dateutil
+        sudo apt-get update
+        sudo apt-get install -y pandoc
         pip install git+https://github.com/OpenPecha/CommonSpell.git
     - name: Create vulgate text
       run: |
@@ -39,8 +41,7 @@ jobs:
         from CommonSpell.serializers.csv import CSVSerializer
         from CommonSpell.serializers.plain_text import PlainTextSerializer
         from CommonSpell.commonspeller import CommonSpeller
-
-
+      
 
         def run_common_speller(version_dir):
             try:
@@ -74,9 +75,7 @@ jobs:
             for weigher in weighers:
                 tokenMatrixWeigher.add_weigher(weigher, weigher_weight=1)
             weighted_matrix = tokenMatrixWeigher.get_weight_matrix(token_matrix)
-
-
-            # serializer = DocxSerializer(token_matrix, tokenMatrixWeigher, weighers, output_dir=common_spell_dir)
+  
             serializer_classes = [CSVSerializer, DocxSerializer, PlainTextSerializer]
             for serializer_class in serializer_classes:
                 if serializer_class == DocxSerializer:
